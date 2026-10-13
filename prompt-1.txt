@@ -1,1 +1,195 @@
-hi
+I want to build my own AI-powered motion graphics studio. The idea is to create a system that can produce high-quality, professional motion graphics videos similar to the ones you see from top creative agencies on Instagram, YouTube, and other social platforms.
+
+I don't want a basic video generator that puts some text on a gradient background and adds a few transitions. I want a proper rendering system that I can set up once and reuse for different projects, clients, products, and brands.
+
+The goal is to give the system a creative brief, reference videos, images, logos, product assets, and audio, and have it generate a polished motion graphics video with smooth animations, well-timed transitions, sound design, and professional visual storytelling.
+
+Here's how I want you to approach this.
+
+1. First, understand the project and inspect the environment.
+
+Before writing code, check what is already available on my machine and in the current project. Identify whether Node.js, FFmpeg, Playwright, and the other necessary dependencies are installed.
+
+I want you to build on the existing environment wherever possible rather than reinstalling everything or creating unnecessary complexity.
+
+If the project directory is empty, set up a clean project structure. If something already exists, inspect it before making changes.
+
+Explain the architecture briefly, then start implementing it. Don't just give me a tutorial or a list of commands. I want you to actually build the working system.
+
+2. Build a proper rendering engine.
+
+One important thing to understand is that the AI isn't directly creating every video frame for us. It can write the code that describes how each frame should look, how objects should move, and how the entire scene should behave over time.
+
+I want to use that approach.
+
+Build a rendering pipeline where:
+
+- We create scenes using HTML, CSS, JavaScript, SVG, Canvas, or other appropriate rendering technologies.
+- Playwright launches a browser and captures the animation at controlled timestamps.
+- Every frame is rendered at a consistent resolution and frame rate.
+- FFmpeg combines the rendered frames into a final MP4 video.
+- Audio, music, sound effects, and transitions are synchronized properly.
+- The final output can be rendered again without manually repeating the entire process.
+
+Make the rendering system reliable. It should handle different scene durations, multiple scenes, frame-rate requirements, and video resolutions without breaking.
+
+Start with a dependable MVP before adding more advanced features.
+
+3. The visual quality is extremely important.
+
+I don't want the usual AI-generated aesthetic: oversized text in the middle of a screen, generic gradients, random floating shapes, and meaningless animations.
+
+The system should behave more like a motion designer who understands composition, typography, visual hierarchy, pacing, and storytelling.
+
+When I provide reference videos or images, study them and identify the visual characteristics that make them work. For example:
+
+- How the camera moves.
+- How objects enter and leave the frame.
+- How typography is arranged.
+- How scenes transition into each other.
+- How depth, lighting, shadows, and perspective are used.
+- How the animation responds to the rhythm of the audio.
+- How the visual composition changes throughout the video.
+
+Use those references to guide the implementation rather than blindly copying a template.
+
+The system should support real assets, including product screenshots, photographs, logos, illustrations, icons, textures, and background footage.
+
+When an asset would improve a scene, use it. If an essential asset is missing, tell me what is needed rather than inventing a fake replacement.
+
+4. Use proper animation physics.
+
+I want animations that feel intentional and natural, not like objects are simply moving from one CSS position to another.
+
+Implement reusable animation utilities for spring motion, easing, interpolation, overshoot, damping, and other effects where appropriate.
+
+Where spring-based animation is needed, use mathematically defined spring functions with explicit parameters such as stiffness, damping, and mass. Make the motion deterministic so that rendering a frame at a particular timestamp always produces the same result.
+
+Don't rely on arbitrary delays, random animation values, or basic transitions to simulate professional motion design.
+
+You can use CSS for styling and rendering when it makes sense. However, the underlying animation timing and motion should be controlled by a predictable animation system rather than scattered CSS transitions that are difficult to synchronize or reproduce.
+
+Build reusable motion primitives that we can use across different projects.
+
+5. Treat sound design as part of the video, not an afterthought.
+
+The system should support background music, sound effects, voiceovers, and custom audio.
+
+I want transitions and important visual events to line up with the music wherever appropriate.
+
+Build a timeline system that lets us define when scenes begin and end, when sound effects play, and when important visual events happen.
+
+Where possible, analyze the audio to identify beats and useful timing markers. Use these markers to help synchronize scene changes, text reveals, transitions, and animation accents.
+
+Don't force every animation to happen on every beat. The result should feel like a professionally edited video, with moments of emphasis, pauses, and changes in pacing.
+
+Use audio files that I provide or audio that can be generated through an available service. Don't assume an external AI audio API is available unless it has actually been configured.
+
+6. Make the system capable of reviewing its own output.
+
+This is one of the most important parts of the project.
+
+I don't want the workflow to end as soon as an MP4 is rendered.
+
+After generating a video, build a review process that can inspect representative frames and identify problems such as:
+
+- Text that is clipped or difficult to read.
+- Elements that overlap unexpectedly.
+- Empty or visually uninteresting frames.
+- Awkward transitions between scenes.
+- Inconsistent spacing and alignment.
+- Assets that appear stretched or distorted.
+- Animations that move too quickly or too slowly.
+- Scenes that look disconnected from the overall visual style.
+- Visual events that don't align with the audio as intended.
+
+Use programmatic checks where possible and a vision-capable AI model when one is available and configured.
+
+The review process should produce specific, actionable feedback. For example, instead of saying that a scene looks bad, it should identify the scene, describe the issue, and suggest a concrete correction.
+
+Then let the system modify the relevant scene code, render the affected sections again, and repeat the review.
+
+I want an iterative workflow that improves the output rather than blindly accepting the first render.
+
+A quality score can be useful, but don't pretend that an arbitrary score guarantees professional quality. Combine measurable checks with visual review and clear acceptance criteria.
+
+7. Make the entire workflow reusable.
+
+Eventually, I want to use this for different purposes:
+
+- Promotional videos for AI products and startups.
+- Product launch videos.
+- SaaS explainer videos.
+- Website and app showcases.
+- Social media advertisements.
+- Cinematic typography videos.
+- Short educational videos about technology.
+- Client projects that require a particular visual identity.
+
+Don't hardcode the system around one video or one brand.
+
+Create a workflow where I can provide a brief, select the desired format, supply reference materials, and generate a video using reusable scenes, animation utilities, transitions, and rendering tools.
+
+Keep the creative content separate from the rendering engine so that changing the video doesn't require rewriting the entire system.
+
+8. Think about the architecture before adding unnecessary tools.
+
+Use Node.js for orchestration, Playwright for browser-based rendering, and FFmpeg for encoding and audio processing where appropriate.
+
+You can use additional libraries if they genuinely improve the result, but keep the system understandable and maintainable.
+
+Don't add dependencies just because they're popular. Explain why a dependency is needed before introducing anything that significantly complicates the setup.
+
+If a particular feature requires a paid API, an API key, or an external service, make that dependency clear. Build a sensible local alternative where possible.
+
+Don't claim a feature works unless you've actually implemented and tested it.
+
+9. I want you to work like an engineer building a real product.
+
+Don't generate the entire codebase in one giant file.
+
+Separate the rendering engine, scene definitions, animation utilities, audio processing, asset management, and quality-review logic into sensible modules.
+
+Add useful logging, error handling, and configuration options.
+
+Make it possible to render the same project repeatedly and obtain consistent results. Account for browser readiness, font loading, image loading, animation timing, and other issues that could cause frames to render incorrectly.
+
+If something fails, identify the underlying problem and fix it rather than hiding the error.
+
+Write a README explaining how to install the dependencies, configure the project, render a video, and troubleshoot common issues.
+
+10. Start by building one genuinely impressive example.
+
+Before building an elaborate dashboard or adding lots of features, I want a working demonstration that proves the rendering engine is capable of producing something visually compelling.
+
+Create a short promotional video for a fictional AI product.
+
+Give it a clear beginning, middle, and ending. Use carefully composed typography, real visual elements, smooth motion, purposeful transitions, and synchronized sound design where audio assets are available.
+
+Avoid making it look like a slideshow or a collection of unrelated animations.
+
+The opening should grab attention, the middle should communicate the product's value, and the ending should feel deliberate and memorable.
+
+Use this first video to test the entire pipeline, from scene generation to frame rendering, encoding, and quality review.
+
+After rendering it, inspect the actual output and fix obvious problems before considering the demonstration complete.
+
+Here's how I want you to proceed:
+
+First, inspect my environment and determine what's already installed.
+
+Second, propose a straightforward architecture and explain any important technical decisions.
+
+Third, implement the core rendering pipeline.
+
+Fourth, create the first promotional video and render it.
+
+Fifth, inspect the output, identify weaknesses, and improve it.
+
+Finally, document how I can use the system to create more videos.
+
+Don't stop after writing the plan. Start building, run the relevant commands, test the implementation, and show me the actual result.
+
+If you encounter a limitation, explain it honestly and work around it when possible.
+
+The end goal is to have my own reusable motion graphics production system, not just a script that generates one video.
