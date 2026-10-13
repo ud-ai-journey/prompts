@@ -1,0 +1,185 @@
+I want you to create a stunning, premium-quality promotional video for https://chilsandco.com/.
+
+I don't want a generic AI-generated advertisement. I want something that looks like it was made by a professional creative agency specializing in high-end motion graphics, product advertising, and brand storytelling.
+
+The brand is Chils & Co., and the video should be created specifically for this business.
+
+Your job is to research the brand, understand its products and visual identity, come up with a creative direction, and actually build and render the final video using the tools available in this environment.
+
+Don't just give me a storyboard or write a script. I want you to produce the actual video.
+
+1. First, understand the brand
+
+Visit https://chilsandco.com/ and explore the website carefully.
+
+Understand:
+
+- What the brand sells.
+- Who its target customers are.
+- What makes its products different.
+- Its visual identity, including colors, typography, imagery, and overall aesthetic.
+- How the brand communicates with customers.
+- What emotions the brand wants to evoke.
+- Which products or collections deserve the most attention in a promotional video.
+
+Look at the actual product images, website design, logos, and other available brand assets.
+
+Use the existing website as your primary reference. Don't invent product features, prices, offers, ingredients, or brand claims.
+
+If you cannot access the website from your current environment, tell me and ask me for the necessary assets instead of pretending you've researched it.
+
+2. Come up with a genuinely creative concept
+
+Once you understand the brand, develop a creative concept for a short promotional video.
+
+I want you to think like a creative director, not just an AI coding assistant.
+
+Don't immediately jump into a generic sequence of product shots, floating text, gradients, and transitions.
+
+Find an interesting way to present the brand. Think about how the products can be revealed, how the visuals can tell a story, and how the video can capture attention within the first few seconds.
+
+The creative direction should feel appropriate for Chils & Co., not like a template that could be used for any business.
+
+You can explore cinematic product reveals, editorial typography, sophisticated transitions, layered compositions, 3D-inspired movement, dynamic product layouts, or other techniques that suit the brand.
+
+However, don't use effects simply because they look impressive. Every visual decision should support the product and the overall creative concept.
+
+Before implementing the video, briefly explain the concept you've chosen and why it fits the brand. Then move directly into production.
+
+3. Make it look like professional motion design
+
+I want the final result to feel polished enough that the brand could genuinely use it on Instagram Reels, YouTube Shorts, its website, or a paid advertising campaign.
+
+Pay attention to:
+
+- Composition and visual hierarchy.
+- Typography and text placement.
+- Smooth, natural animation.
+- Sophisticated transitions between scenes.
+- Depth, lighting, shadows, and perspective where appropriate.
+- Product image quality and positioning.
+- Visual pacing and rhythm.
+- Color consistency with the brand.
+- Sound design and music synchronization.
+
+Avoid the common AI video aesthetic of centered text on a gradient background with random floating shapes.
+
+Use the real product photography and brand assets wherever possible. Don't replace actual products with inaccurate AI-generated versions.
+
+If the website has high-quality product photography, use it creatively. The motion design should enhance the original product imagery rather than obscure it.
+
+4. Build and render the video programmatically
+
+Use the available tools to create the video rather than merely describing how someone could make it.
+
+Inspect the existing development environment before installing anything.
+
+Where appropriate, use:
+
+- Node.js for orchestration.
+- HTML, CSS, JavaScript, SVG, or Canvas for scene creation.
+- Playwright to render animation frames in a browser.
+- FFmpeg to combine frames, encode the final MP4, and process audio.
+
+You can use other tools if they are better suited to a particular task.
+
+Implement smooth, deterministic animation. Use proper easing, spring-based motion where appropriate, and carefully controlled timing.
+
+Make sure the scenes are rendered at consistent timestamps and the final video has no missing frames, broken assets, unintended blank screens, or incomplete transitions.
+
+If you need additional assets, look for suitable brand-owned assets first. Don't download random images and pass them off as Chils & Co. products.
+
+5. Pay special attention to the first three seconds
+
+The opening is extremely important.
+
+Create a visual hook that immediately captures attention and makes the viewer want to continue watching.
+
+Don't start with a long logo animation or a generic title card unless the creative concept genuinely calls for it.
+
+The opening should introduce the brand or product in an interesting, visually compelling way.
+
+Every subsequent scene should feel like a deliberate continuation of the same creative idea.
+
+6. Make the sound design feel intentional
+
+If appropriate for the brand and concept, incorporate background music, subtle sound effects, and audio accents.
+
+Synchronize important product reveals, transitions, and visual movements with the audio.
+
+Don't add random sound effects just to make the video feel more elaborate.
+
+Use audio assets that are available and properly licensed for the intended use. If suitable music isn't available, create a version that can accept a soundtrack later rather than using an unlicensed commercial track.
+
+Keep the sound design consistent with the brand's personality.
+
+7. Review your own work and improve it
+
+Don't consider the video finished just because the rendering process succeeds.
+
+Inspect the actual rendered output.
+
+Extract representative frames and examine the video for:
+
+- Incorrect product imagery.
+- Poor composition.
+- Text clipping or readability issues.
+- Inconsistent typography.
+- Awkward transitions.
+- Excessive empty space.
+- Animation that feels mechanical.
+- Inconsistent branding.
+- Timing problems.
+- Visual elements that distract from the products.
+
+Use programmatic validation and vision-based review where available.
+
+Fix the issues you identify and render the video again.
+
+Don't claim that you've reviewed the video unless you've actually inspected the rendered output.
+
+8. Deliver an actual video file
+
+My primary requirement is the finished promotional video, not a complicated application or a large collection of source files.
+
+Create a high-quality MP4 suitable for social media.
+
+Unless the brand or creative direction suggests otherwise, start with a vertical 9:16 format at 1080 × 1920 resolution.
+
+Aim for approximately 20–30 seconds, with the final duration determined by the strength of the concept.
+
+Also keep the source project organized so I can modify the video later.
+
+Save the final output in an obvious location, such as:
+
+output/chils-and-co-promo.mp4
+
+Provide a short README explaining how to render the video again and how to change the product assets, text, and timing.
+
+If the first concept would work better in a different format, explain why before committing to that format.
+
+9. Work independently, but be honest about limitations
+
+Make sensible creative and technical decisions without asking me to approve every small detail.
+
+However, don't invent information about the brand or pretend a feature works when it doesn't.
+
+If a dependency is missing, investigate and install it if possible.
+
+If a website asset cannot be accessed, explain what's missing and find a reasonable alternative.
+
+If you cannot generate a particular effect with the available tools, find another way to achieve a similar result.
+
+Don't stop after producing the first rough version. Review it and improve it.
+
+The final objective
+
+I want a video that makes someone look at it and think:
+
+"This looks like a professional creative agency made it."
+
+The video should feel unmistakably appropriate for Chils & Co., showcase its actual products, and be good enough to present to the brand as a serious piece of promotional creative.
+
+Start by researching the website and choosing the creative direction. Then build, render, inspect, and refine the actual video.
+
+The deliverable is the finished video. Don't stop at the concept, storyboard, or code.
